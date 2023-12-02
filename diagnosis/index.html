@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Diagnosis Penyakit</title>
+</head>
+<body>
+    <h2>Form Diagnosis Penyakit</h2>
+<table border="1">
+        <caption>Keterangan Gejala</caption>
+        <tr>
+            <th>ID Gejala</th>
+            <th>Nama Gejala</th>
+        </tr>
+        <tr>
+            <td>G001</td>
+            <td>Demam</td>
+        </tr>
+        <tr>
+            <td>G002</td>
+            <td>Batuk</td>
+        </tr>
+        <tr>
+            <td>G003</td>
+            <td>Pilek</td>
+        </tr>
+        <tr>
+            <td>G004</td>
+            <td>Nyeri perut</td>
+        </tr>
+        <tr>
+            <td>G005</td>
+            <td>Sesak napas</td>
+        </tr>
+        <tr>
+            <td>G006</td>
+            <td>BAB cair lebih dari 4 kali sehari</td>
+        </tr>
+        <tr>
+            <td>G007</td>
+            <td>Pendarahan (mimisan, bintik merah di kulit atau BAB berdarah)</td>
+        </tr>
+        <tr>
+            <td>G008</td>
+            <td>Lidah kotor (tertutup selaput putih atau kuning yang menempel di permukaan), tepi hipertermi (tepi lidah kemerahan), dan tremor</td>
+        </tr>
+        <tr>
+            <td>G009</td>
+            <td>Sakit saat menelan</td>
+        </tr>
+        <tr>
+            <td>G010</td>
+            <td>Tidur mendengkur</td>
+        </tr>
+    </table>
+    <form action="diagnosis.php" method="post">
+        <label for="gejala1">Gejala 001:</label>
+        <input type="checkbox" name="gejala[]" value="G001">
+        <br>
+        <label for="gejala2">Gejala 002:</label>
+        <input type="checkbox" name="gejala[]" value="G002">
+        <br>
+        <label for="gejala3">Gejala 003:</label>
+        <input type="checkbox" name="gejala[]" value="G003">
+        <br>
+        <label for="gejala4">Gejala 004:</label>
+        <input type="checkbox" name="gejala[]" value="G004">
+        <br>
+        <label for="gejala5">Gejala 005:</label>
+        <input type="checkbox" name="gejala[]" value="G005">
+        <br>
+	 <label for="gejala6">Gejala 006:</label>
+        <input type="checkbox" name="gejala[]" value="G006">
+        <br>
+        <label for="gejala7">Gejala 007:</label>
+        <input type="checkbox" name="gejala[]" value="G007">
+        <br>
+        <label for="gejala8">Gejala 008:</label>
+        <input type="checkbox" name="gejala[]" value="G008">
+        <br>
+        <label for="gejala9">Gejala 009:</label>
+        <input type="checkbox" name="gejala[]" value="G009">
+        <br>
+        <label for="gejala10">Gejala 010:</label>
+        <input type="checkbox" name="gejala[]" value="G010">
+        <br>
+        <button type="submit">Diagnosa</button>
+    </form>
+</body>
+</html>
